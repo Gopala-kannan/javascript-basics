@@ -1,15 +1,18 @@
-// var factor = "kamal"
-// var fplayer  = "dhoni"
-// var fmovie = "Anbe sivam"
+//write a charaters name in a variables
+//wirte a function
 
-// function favourite()
-// {
-//     console.log("favourite Actor:" + factor)
-//     console.log("favourite movie:" + fmovie)
-//     console.log("favourite player:" + fplayer)
-// }
+var factor = "kamal"
+var fplayer  = "dhoni"
+var fmovie = "Anbe sivam"
 
-// favourite()
+function favourite()
+{
+    console.log("favourite Actor:" + factor)
+    console.log("favourite movie:" + fmovie)
+    console.log("favourite player:" + fplayer)
+}
+
+favourite()
 
 function add(a,b)
 {
