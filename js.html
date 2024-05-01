@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="value">
+        <button onclick="getinput()">Get input</button>
+
+        <h1 id="display">
+
+        </h1>
+    </div>
+</body>
+<script>
+    function getinput(){
+        var userinput = document.getElementById('value').value;
+        document.getElementById('display').innerHTML = userinput;
+
+        if(userinput === "brototype"){
+            alert(userinput);
+        }
+        
+    }
+</script>
+</html>
