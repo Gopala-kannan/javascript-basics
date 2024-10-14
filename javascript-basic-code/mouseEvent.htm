@@ -1,0 +1,20 @@
+<div id="box" style="width: 100px; height: 100px; background-color: lightblue;"></div>
+<p id="message"></p>
+
+<script>
+    const box = document.getElementById("box");
+    const message = document.getElementById("message");
+    
+    box.addEventListener("mouseover", function(){
+        message.textContent = "Mouse is over the box";
+    });
+
+    box.addEventListener("mouseout", function(){
+        message.testContent = "Mouse left the box";
+    });
+
+    box.addEventListener("click", function(){
+        message.textContent = "box clicked";
+    });
+
+</script>

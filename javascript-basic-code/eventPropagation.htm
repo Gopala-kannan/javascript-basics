@@ -1,0 +1,16 @@
+<div id="outer" style="padding: 20px; background-color: lightgray;">
+    Outer
+    <div id="inner" style="padding: 20px; background: lightgreen;">
+        Inner
+    </div>
+</div>
+
+<script>
+    document.getElementById("outer").addEventListener("click", function(){
+        alert("Outer div clicked");
+    });
+
+    document.getElementById("inner").addEventListener("click", function(){
+        alert("Inner div clicked")
+    })
+</script>
