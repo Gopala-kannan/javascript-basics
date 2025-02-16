@@ -1,0 +1,21 @@
+// node create directory and remove
+
+const fs = require('fs');
+if(fs.existsSync('./new')) {
+    fs.rmdir('./new', (err) => {
+        if (err) throw err;
+        console.log('Directory deleted successfully!'); // rm is remove directory 
+    });
+}
+
+if(!fs.existsSync('./new')) {
+    fs.mkdir('./new', (err) => {
+        if (err) throw err;
+        console.log('Directory deleted successfully!'); // mk is make directory
+    });
+}
+
+process.on('uncaughtException', (err) =>{
+    console.log(`there was an uncaught error, ${err}`)
+    process.exit(1)
+  });
